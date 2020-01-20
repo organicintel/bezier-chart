@@ -1520,7 +1520,7 @@ class _BezierChartPainter extends CustomPainter {
       final date = _currentXDataPoint.xAxis as DateTime;
       final now = DateTime.now();
       if (date.year == now.year && now.month == date.month) {
-        return "Current Month\n";
+        return "Current Monthly\n";
       } else {
         return "${dateFormat.format(_currentXDataPoint.xAxis)}\n";
       }
@@ -1529,7 +1529,7 @@ class _BezierChartPainter extends CustomPainter {
       final date = _currentXDataPoint.xAxis as DateTime;
       final now = DateTime.now();
       if (date.year == now.year) {
-        return "Current Year\n";
+        return "Current Monthly\n";
       } else {
         return "${dateFormat.format(_currentXDataPoint.xAxis)}\n";
       }
